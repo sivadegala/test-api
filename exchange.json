@@ -1,0 +1,13 @@
+{
+  "main": "test-api.raml",
+  "name": "test-api",
+  "groupId": "d2d774cc-29cf-4c1b-8920-0f3bf7ceef6d",
+  "assetId": "test-api",
+  "version": "1.0.0",
+  "classifier": "raml",
+  "tags": [],
+  "descriptorVersion": "1.0.0",
+  "organizationId": "d2d774cc-29cf-4c1b-8920-0f3bf7ceef6d",
+  "apiVersion": "v1",
+  "originalFormatVersion": "1.0"
+}

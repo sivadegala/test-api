@@ -1,0 +1,51 @@
+#%RAML 1.0
+version: v1
+title: test-sapi-v1
+baseUri: api/test
+description: test  api used to get test data
+#created by jyothi on 08/27/2023 added get test details
+
+
+types:
+
+  ResponsedataType: !include libraries/ResponsedataType.raml
+
+uses:
+  common-data-types:  libraries/common-data-types.raml
+
+/test:
+  get:
+    description: To get test data 
+
+
+    responses:
+      201:
+        body:
+          application/json:
+            type: ResponsedataType
+            example: !include examples/201.json  
+      400:
+        body:
+          application/json:
+            type: common-data-types.errorType
+            example: !include examples/400.json
+      404:
+        body:
+          application/json:
+            type: common-data-types.errorType
+            example: !include examples/404.json
+      503:
+        body:
+          application/json:
+            type: common-data-types.errorType
+            example: !include examples/503.json
+      500:
+        body:
+          application/json:
+            type: common-data-types.errorType
+            example: !include examples/500.json      
+
+
+ 
+
+
